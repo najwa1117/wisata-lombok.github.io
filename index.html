@@ -1,1 +1,112 @@
-mira
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesona Lombok - Wisata Alam Terlengkap</title>
+    <meta name="description"
+        content="Jelajahi keindahan alam Pulau Lombok. Temukan destinasi wisata terbaik, harga tiket, fasilitas, dan galeri foto.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <span style="color: var(--accent-color);">🌴</span> Pesona Lombok
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#destinations">Destinasi</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+            </ul>
+            <div class="hamburger">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>The Magical Island of Lombok</h1>
+            <p>Jelajahi ribuan masjid, pantai perawan, dan kemegahan Gunung Rinjani.</p>
+            <a href="#destinations" class="btn">Mulai Petualangan</a>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <h2 class="section-title">Wisata Alam Lombok</h2>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Cari wisata (pantai, gunung, air terjun)..."
+                aria-label="Cari destinasi wisata">
+            <button id="search-btn">🔍</button>
+        </div>
+
+        <div class="grid" id="destinations-grid">
+            <!-- Content will be injected by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Simple Gallery Section (Static) -->
+    <section id="gallery" style="background-color: #f0fdf4; padding: 5rem 5%;">
+        <h2 class="section-title">Galeri Keindahan Lombok</h2>
+        <div style="display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 2rem; scrollbar-width: thin;">
+            <img src="https://images.unsplash.com/photo-1570789686469-f894711f5fae?auto=format&fit=crop&w=600&q=80"
+                alt="Pantai Lombok" style="height: 250px; border-radius: 8px; min-width: 300px; object-fit: cover;">
+            <img src="https://images.unsplash.com/photo-1505993597083-d3f2a9d83231?auto=format&fit=crop&w=600&q=80"
+                alt="Bukit di Lombok" style="height: 250px; border-radius: 8px; min-width: 300px; object-fit: cover;">
+            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=600&q=80"
+                alt="Air Terjun Lombok" style="height: 250px; border-radius: 8px; min-width: 300px; object-fit: cover;">
+            <img src="https://images.unsplash.com/photo-1584282531070-e67f2e212deb?auto=format&fit=crop&w=600&q=80"
+                alt="Gili Trawangan" style="height: 250px; border-radius: 8px; min-width: 300px; object-fit: cover;">
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=600&q=80"
+                alt="Pemandangan Laut" style="height: 250px; border-radius: 8px; min-width: 300px; object-fit: cover;">
+            <img src="https://images.unsplash.com/photo-1510936111840-65b151671a2f?auto=format&fit=crop&w=600&q=80"
+                alt="Gunung Rinjani" style="height: 250px; border-radius: 8px; min-width: 300px; object-fit: cover;">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h2>Pesona Lombok</h2>
+            <p>Jaga kebersihan dan kelestarian alam Lombok saat berkunjung.</p>
+            <p>&copy; 2024 Pesona Lombok Prototype.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Template -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <div class="modal-header">
+                <img src="" alt="" class="modal-img" id="modal-img">
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title" id="modal-title">Title</h2>
+                <div class="modal-info">
+                    <!-- Injected by JS -->
+                </div>
+                <div class="modal-details">
+                    <!-- Injected by JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
